@@ -1,0 +1,71 @@
+/* =============================
+	  MODAL STYLES
+=============================== */
+
+
+
+//MODALS
+//=================================
+.cspplity  {
+	//background-color: rgba(0,87,158,0.42);
+	
+	.csmodal-container {
+		@include center;
+		max-width: 80%;
+		min-width: none;
+		 	
+	 	//600px
+		@include respond-max( $l-phone ){
+			max-height: 500px !important;
+			overflow-y: scroll !important;
+			max-width: 90%;
+		}
+
+		
+		.csmodal-content {
+			padding: em(30);
+			
+			//600px
+			@include respond-max( $l-phone ){
+				padding: em(20);
+			}
+			
+			h4 {
+				//color: $orange;
+				margin-bottom: em(15);
+			}
+		}	
+	}
+	
+	.cspplity-close {
+		display: none;
+		
+		@include respond-custom(max-width, 550px ){
+		 	display: block;
+		 	position: absolute !important;
+		 	right: 5%;
+		 	top: 0;
+		 	text-shadow: none !important;
+		 	//color: $orange !important;
+	 	}
+	}
+
+	
+	.csmodal-footer {
+			
+		> a.csm-ok-btn {
+			//background-color: $orange !important;
+			//border-color: $orange !important;
+			border-radius: 0 !important;
+			text-shadow: none !important;
+			
+			
+			&:hover,
+			&:focus {
+				//background-color: $grey !important;
+				//border-color: $grey !important;
+			}
+		}
+		
+	}	
+}

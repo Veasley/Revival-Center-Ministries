@@ -1,0 +1,87 @@
+/* =============================
+	   Structure Mixins
+=============================== */
+
+//Center any element
+@mixin center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//vertically center any element (Check browser compatability)
+@mixin vert-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =============================
+	   Utility Mixins
+=============================== */
+
+//Mixin that forces transition to be rendered via the on-board graphics processor of the device
+@mixin smooth-move($x:0,$y:0,$z:0) {
+	-webkit-transform:translate3d($x,$y,$z);
+	-moz-transform:translate3d($x,$y,$z);
+	-ms-transform:translate3d($x,$y,$z);
+	transform:translate3d($x,$y,$z);
+}
+
+//Opacity Mixin with old IE fallback
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	filter: alpha(opacity=($opacity * 100));
+}
+
+
+/* =============================
+	RESPONSIVE MIXINS
+=============================== */
+
+ 	/*------------------------------
+	* Responsive Breakpoints | VARS
+	*------------------------------*/
+
+	$s-phone:	 	em( 320 );
+	$m-phone:	 	em( 480 );
+	$l-phone:		em( 600 );
+	$xl-phone: 	    em( 767 );
+	$ver-tablet: 	em( 768 );
+	$m-tablet: 	    em( 880 );
+	$l-tablet: 	    em( 980 );
+	$hor-tablet: 	em( 1024 );
+	$m-desktop:	  	em( 1200 );
+	$l-laptop:	    em( 1280 );
+	$m-desktop:  	em( 1400 );
+	$l-desktop: 	em( 1440 );
+
+/*------------------------------
+* Responsive Max-Width | Mixin
+*------------------------------*/
+//Use the VARS for the desired breakpoint
+
+@mixin respond-max($breakpoint-max) {
+	@media only screen and (max-width: $breakpoint-max ) { @content; }
+}
+
+/*------------------------------
+* Responsive Max-Width | Mixin
+*------------------------------*/
+//Use the VARS for the desired breakpoint
+
+@mixin respond-min($breakpoint-min) {
+	@media only screen and (min-width: $breakpoint-min ) { @content; }
+}
+
+
+//If you use the custom query, PLEASE Specify what it is for!!
+@mixin respond-custom( $type,$value,$type2:null,$value2:null) {
+	@if $type2 != null{
+		@media only screen and ($type: em($value)) and ($type2: em($value2)) { @content; }
+	} @else {
+		@media only screen and ($type: em($value)) { @content; }
+	}
+
+}

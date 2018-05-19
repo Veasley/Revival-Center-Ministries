@@ -1,0 +1,37 @@
+/*!
+Theme Name: X &ndash; Child Theme
+Theme URI: http://theme.co/x/
+Author: VeasleyDesign
+Description: A custom child theme specifically for X.
+Version: 1.0.0
+Template: x
+*/
+
+// Always Load Vars First
+// ======================
+@import 'vars/vars-loader';
+
+// Load Bourbon
+// =======================
+@import 'libs/bourbon/_bourbon';
+
+// Load Globals
+// ============================
+@import 'global/global-loader';
+
+// Load Core
+// ============================
+@import 'core/core-loader';
+
+// Load pages
+// ============================
+@import 'pages/pages-loader';
+
+// Load Components
+// ============================
+@import 'components/components-loader';
+
+
+// Load Shame
+// ============================
+@import 'global/_shame';

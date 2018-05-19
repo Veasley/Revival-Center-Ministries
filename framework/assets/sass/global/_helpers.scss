@@ -1,0 +1,152 @@
+/* ======================================
+			HANDY HELPERS
+========================================*/
+
+
+//Image
+//=======================
+._img-full {
+	width: 100%;
+}
+
+
+//Hiding Column
+//================
+._invisible-col {
+	
+	//880px
+	@include respond-max( $m-tablet ) {
+		display: none !important;
+	}
+}
+
+
+
+//Stretch column height to match
+//====================
+._stretch-container {
+	display: flex !important;
+	align-items: stretch !important;
+}
+
+
+
+// MOBILE PADDING
+//========================
+._mobile-padding-tb {
+	
+	//600px
+    @include respond-max($l-phone) {
+        padding-top: em(30) !important;
+		padding-bottom: em(30) !important;
+    }
+}
+
+._mobile-padding-top {
+	
+	//600px
+    @include respond-max($l-phone) {
+        padding-top: em(30) !important;
+    }
+}
+
+._mobile-padding-bottom {
+	
+	//600px
+    @include respond-max($l-phone) {
+        padding-bottom: em(30) !important;
+    }
+}
+
+
+
+// MOBILE MARGIN
+//========================
+._mobile-margin-tb {
+	
+	//600px
+    @include respond-max($l-phone) {
+        margin-top: em(30) !important;
+		margin-bottom: em(30) !important;
+    }
+}
+
+._mobile-margin-top {
+	
+	//600px
+    @include respond-max($l-phone) {
+        margin-top: em(30) !important;
+    }
+}
+
+._mobile-margin-bottom {
+	
+	//600px
+    @include respond-max($l-phone) {
+        margin-bottom: em(30) !important;
+    }
+}
+
+
+
+
+// Helper Class to Set Up Before Elements
+// in prep for use as overlays etc
+// ===============================
+
+._before {
+	position: relative !important;
+
+	&:before {
+	    content: '';
+	    position: absolute;
+	    display: block !important;
+	    width: 100%;
+	    height: 100%;
+	    left: 0;
+	    top: 0;
+	    z-index: 1;
+	}
+	
+	// Grey Overlay
+	//======================
+	&._overlay-grey {
+	
+		&:before {
+			//background-color: rgba($grey, .3);
+		}
+		
+	}
+	
+	// Gradient Overlay
+	//======================
+	
+	// right to left
+	._before._gradient-tb {
+	
+		&:before{
+			@include linear-gradient( to right, transparent 0%, rgba( $black, .8) );
+			z-index: 100;
+		}
+	}
+
+}
+
+
+
+
+
+//BREAKING COLUMNS
+//========================
+._break-1-2 {
+	
+	//880px
+    @include respond-max($m-tablet) {
+		
+		.x-column.x-1-2 {
+			width: 100% !important;
+			float: none !important;
+			display: block !important;
+		}
+	}
+}
