@@ -1,0 +1,56 @@
+/* =============================
+	   FEATURE BOX STYLES
+=============================== */
+
+.x-feature-box {
+	transition: all .3s linear;
+	
+	.x-feature-box-title {
+		font-size: 1.2rem;
+		
+		 //980px
+		@include respond-max($l-tablet) {
+			font-size: 1rem;
+		}
+	}
+	
+	.x-feature-box-graphic {
+		margin-bottom: 30px;
+		width: 100%;
+		
+		.x-feature-box-graphic-inner {
+			width: 100%;
+			font-size: 0 !important;
+			
+			img {
+				width: 100%;
+			}
+		}
+	}
+	
+	.x-feature-box-text {
+		font-size: 0.9rem;
+		line-height: 1.4;
+		padding: 0 10px;
+		
+		//767px
+		@include respond-max( $xl-phone ) {
+			font-size: 0.8rem;
+		}
+		
+		> a {
+			@extend .x-btn;
+			display: inline-block;
+			text-transform: uppercase;
+			border: 3px solid $d-blue;
+			margin: em(35) auto;
+			color: $d-blue;
+			width: auto;
+			
+			//1024px
+			@include respond-max($hor-tablet) {
+				display: block;
+			}
+		}
+	}
+}

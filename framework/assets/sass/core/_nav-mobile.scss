@@ -1,3 +1,22 @@
 /* =============================
 	MOBILE NAVIGATION STYLES
 =============================== */
+
+.x-btn-navbar {
+	box-shadow: none !important;
+	border-radius: 0 !important;
+}
+
+
+.x-nav-wrap.mobile {
+	background-color: rgba($d-blue, .98) !important;
+	padding: 0 30px;
+	
+	.hide {
+		display: block;
+	}
+	
+	.x-nav li >a {
+		font-size: 12px;
+	}
+}

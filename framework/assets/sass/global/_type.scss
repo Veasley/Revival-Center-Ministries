@@ -6,17 +6,38 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0 !important;
 	line-height: 1;
 	transition: all 0.3s ease-in-out;
+	
+	//480px
+	@include respond-max( $m-phone ) {
+		line-height: 1.2;
+	}
+
 }
 
 
 // H1 BUILD
 // =================
 h1 {
-	font-size: 400%;
+	font-size: 300%;
+	
+	//1366px
+    @include respond-max($l-laptop) {
+        font-size: 220%;
+    }
 	
 	//880px
 	@include respond-max( $m-tablet ) {
-		font-size: 300%;
+		font-size: 200%;
+	}
+	
+	//767px
+	@include respond-max( $xl-phone ) {
+		font-size: 150%;
+	}
+	
+	//480px
+	@include respond-max( $m-phone ) {
+		font-size: 100%;
 	}
 	
 }
@@ -25,20 +46,80 @@ h1 {
 // H2 BUILD
 // ===========================
 h2 {
+	font-size: 260%;
 	
+	//1366px
+    @include respond-max($l-laptop) {
+        font-size: 200%;
+    }
+    
+    //880px
+	@include respond-max( $m-tablet ) {
+		font-size: 160%;
+	}
+	
+	//767px
+	@include respond-max( $xl-phone ) {
+		font-size: 130%;
+	}
+	
+	//480px
+	@include respond-max( $m-phone ) {
+		font-size: 100%;
+	}
 }
 
 
 // H3 BUILD
 // ===========================
 h3 {
+	font-size: 240%;
 	
+	//1366px
+    @include respond-max($l-laptop) {
+        font-size: 200%;
+    }
+    
+    //880px
+	@include respond-max( $m-tablet ) {
+		font-size: 160%;
+	}
+	
+	//767px
+	@include respond-max( $xl-phone ) {
+		font-size: 130%;
+	}
+	
+	//480px
+	@include respond-max( $m-phone ) {
+		font-size: 100%;
+	}
 }
 
 
 // H4 BUILD
 // ===========================
 h4 {
+	
+	//1366px
+    @include respond-max($l-laptop) {
+        font-size: 160%;
+    }
+    
+    //880px
+	@include respond-max( $m-tablet ) {
+		font-size: 130%;
+	}
+	
+	//767px
+	@include respond-max( $xl-phone ) {
+		font-size: 115%;
+	}
+	
+	//480px
+	@include respond-max( $m-phone ) {
+		font-size: 100%;
+	}
 	
 }
 
@@ -47,6 +128,15 @@ h4 {
 // ===========================
 h5 {
 	
+	//1366px
+    @include respond-max($l-laptop) {
+        font-size: 120%;
+    }
+    
+    //880px
+	@include respond-max( $m-tablet ) {
+		font-size: 100%;
+	}
 }
 
 
@@ -55,6 +145,15 @@ h5 {
 // ===========================
 h6 {
 	
+	//1366px
+    @include respond-max($l-laptop) {
+        font-size: 100%;
+    }
+    
+    //880px
+	@include respond-max( $m-tablet ) {
+		font-size: 90%;
+	}
 }
 
 
@@ -94,35 +193,36 @@ h6 {
 //TEXT TITLE VARIATIONS
 //==========================
 .x-text {
+	line-height: 1.5;
 	
-	/*//text group with border around title
-	&.cta-title {
+	&.head-title {
 		
-		p:first-of-type {
-			margin-bottom: em(10);
-			line-height: 1.2;
+		> p {
+			text-transform: uppercase;
+			margin-bottom: 8px;
+			color: $d-blue;
+			font-size: 1.2rem;
+			letter-spacing: 1px;
 			
-			> strong {
-				font-size: 28px;
-				letter-spacing: 1px;
-				
-				//880px
-				@include respond-max( $m-tablet ) {
-					font-size: 22px;
-				}
-				
-				@include respond-custom(max-width, 460px) {
-					font-size: 16px;
-				}
+			//1366px
+		    @include respond-max($l-laptop) {
+		        font-size: 1rem;
+		    }
+		    
+		    @include respond-custom(max-width, 550px) {
+			    font-size: 0.8rem;
+			    line-height: 1.2;
 			}
 		}
 		
-		h1,
-		h4 {
-			border: 3px solid white;
-			padding: 8px 0;
+	}
+	
+	p {
+		//767px
+		@include respond-max( $xl-phone ) {
+			font-size: .8rem;
 		}
-	}*/
+	}
 }
 
 
@@ -138,6 +238,18 @@ h6 {
 	
 	&._max-1150 {
 		max-width: em( 1150 );
+	}
+	
+	&._max-1000 {
+		max-width: em( 1000 );
+	}
+	
+	&._max-900 {
+		max-width: em( 900 );
+	}
+	
+	&._max-800 {
+		max-width: em( 800 );
 	}
 	
 	&._max-520 {

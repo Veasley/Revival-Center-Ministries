@@ -1,3 +1,42 @@
 /* =============================
 	 PAGE HEADER STYLES
 =============================== */
+
+#home-hero {
+	
+	//1024px
+    @include respond-max($hor-tablet) {
+	    padding-top: 18%;
+		padding-bottom: 18%;
+    }
+    
+    @include respond-custom(max-width, 960px) {
+		padding-bottom: 5em;
+    }
+    
+    //767px
+	@include respond-max( $xl-phone ) {
+		padding-top: 22%;
+		padding-bottom: 3em;
+	}
+	
+	@include respond-custom(max-width, 960px) {
+		padding-top: 10em;
+    }
+
+	
+	.x-text {
+	
+		&.head-title {
+			
+			> p {
+				color: $l-blue;
+			}
+			
+		}
+	}
+}
+
+#inner-hero {
+	
+}

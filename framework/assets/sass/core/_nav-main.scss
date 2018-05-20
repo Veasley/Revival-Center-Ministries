@@ -6,20 +6,9 @@
 //=======================
 .x-brand {
 	
-	//600px
-	@include respond-max( $l-phone ) {
-		//margin-top: 10px !important;
-		//width: 200px;
-		//height: 50px;
-		//background-image: url(/wp-content/uploads/2017/09/logo-sm.png);
-	    background-repeat: no-repeat;
-	    background-position: center center;
-	    background-size: contain;
-	    transition: all 0.5s ease-in-out;
-	    
-	    img {
-		   display: none;
-	    }
+	//768px
+	@include respond-max( $ver-tablet ) {
+		width: 200px;
 	}
 
 }
@@ -27,8 +16,13 @@
 
 //NAVIGATION BAR
 //========================
+.x-navbar-wrap {
+	position: absolute;
+	width: 100%;
+}
+
 .x-navbar {
-	//background-color: $off-white !important;
+	background-color: transparent !important;
 	box-shadow: none !important;
 	border-bottom: none !important;
 	
@@ -38,17 +32,21 @@
 			
 			> a {
 				
+/*
 				//1200px
 				@include respond-max( $s-laptop ) {
 					padding-left: 20px !important;
 					padding-right: 20px !important;
 					font-size: 19px !important;
 				}
+*/
 				
+/*
 				//320px
 				@include respond-max( $s-phone ) {
 					font-size: 16px !important;
 				}
+*/
 
 				&:hover {
 					box-shadow: none !important;
@@ -97,10 +95,6 @@
 	margin-top: 10px !important;
 	width: 200px;
 	height: 50px;
-	background-image: url(/wp-content/uploads/2017/09/logo-sm.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
     transition: all 0.5s ease-in-out;
     
     @include respond-custom(max-width, 979px) {
@@ -109,16 +103,18 @@
 		height: inherit;
 	}
 	 
+/*
     img {
 	   display: none;
     }
+*/
 
 }
 
 
 // MENU / BAR
 .x-navbar-scroll {
-	//background-color: rgba($off-white, .95) !important;
+	background-color: rgba($d-blue, .95) !important;
 	
 	.x-navbar-inner,
 	.x-nav > li > a {

@@ -5,23 +5,24 @@
 //Black Button
 //==================
 .x-btn {
-	//border: 8px double $black !important;
-	padding: em(20) em(35)!important;
-	font-size: 16px !important;
+	padding: em(12) 5% !important;
+	text-shadow: none !important;
+	font-size: 14px !important;
+	line-height: 1.2;
 	letter-spacing: 1px;
 	font-weight: 600;
+	transition: all 0.3s linear;
 	
+/*
 	//600px
     @include respond-max($l-phone) {
         width: 100%;
-        font-size: 14px !important;
-        padding: em(20) em(15) !important;
     }
+*/
 
 	&:hover,
 	&:focus {
-		//border: 8px double $black;
-		//background-color: rgba($black, .8) !important;
+		background-color: $d-blue !important;
 		color: white;
 	}
 	
@@ -29,32 +30,14 @@
 
 //White Button
 //====================
-.x-btn.-white-btn{
-	border: 8px double white !important;
+.x-btn.-secondary-btn{
 	color: white;
-
+	border-color: $l-blue;
 
 	&:focus,
 	&:hover {
-		border: 8px double white;
-		background-color: rgba(white, .8) !important;
-		//color: $black;
-	}
-
-}
-
-
-//Green Button
-//====================
-.x-btn.-lime-btn{
-	//border: 8px double $green !important;
-	color: white;
-
-	&:focus,
-	&:hover {
-		//border: 8px double $green;
-		//background-color: rgba($green, .8) !important;
-		color: white;
+		background-color: $l-blue !important;
+		border-color: $l-blue;
 	}
 
 }

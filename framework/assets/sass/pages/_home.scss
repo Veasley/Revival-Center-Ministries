@@ -1,3 +1,209 @@
 /* =============================
 		HOME PAGE
 =============================== */
+
+// UPCOMING EVENT BAR
+.mec-wrap {
+	
+	.mec-event-upcoming {
+		font-size: 28px !important;
+		text-transform: uppercase;
+		
+		//1366px
+	    @include respond-max($l-laptop) {
+	        font-size: 22px !important;
+	    }
+	    
+	    //980px
+		@include respond-max($l-tablet) {
+			font-size: 16px !important;
+		}
+	}
+	
+	.mec-event-title {
+		text-transform: none;
+		padding-top: 24px;
+	}
+	
+	.mec-event-button:hover {
+		background: $d-blue !important;
+	}
+}
+
+
+// CTA 4 COLUMNS
+#countdown-col {
+	
+	@include respond-custom(max-width, 960px) {
+		padding-bottom: 0;
+    }
+	
+	.count-banner {
+		
+	    @include respond-custom(max-width, 960px) {
+ 	        display: none;
+	    }
+	}
+	
+	.x-feature-box {
+				
+		&:hover {
+ 			background-color: white;
+ 			
+ 			.x-feature-box-graphic {
+	 			
+	 			&::before {
+		 			opacity: 1;
+	 			}
+	 			
+	 			&::after {
+		 			opacity: .9;
+	 			}
+ 			}
+		}
+		
+		.x-feature-box-graphic {
+			background-color: black;
+			position: relative;
+			
+			&::before {
+				@include center;
+				content: '';
+				position: absolute;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 80px 80px;
+				width: 100%;
+				height: 100%;
+				z-index: 3;
+				top: 50%;
+				transform: translateY(-50%);
+				opacity: 0;
+				transition: all .5s linear;
+			}
+			
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-image: url('/wp-content/uploads/2018/05/gradient-overlay.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				left: 0;
+				top: 0;
+				z-index: 2;
+				opacity: 0;
+				transition: all .5s linear;
+			}
+			
+			img {
+				opacity: .7;
+			}
+		}
+		
+		&.ministries-col .x-feature-box-graphic {
+			
+			&::before {
+				background-image: url('/wp-content/uploads/2018/05/ministries-icon.png');
+			}
+		}
+		
+		&.book-store-col .x-feature-box-graphic {
+			
+			&::before {
+				background-image: url('/wp-content/uploads/2018/05/bookstore-icon.png');
+			}
+		}
+		
+		&.giving-col .x-feature-box-graphic {
+			
+			&::before {
+				background-image: url('/wp-content/uploads/2018/05/donation-icon.png');
+			}
+		}
+		
+		&.gallery-col .x-feature-box-graphic {
+			
+			&::before {
+				background-image: url('/wp-content/uploads/2018/05/gallery-icon.png');
+			}
+		}
+	}
+}
+
+
+
+// WHAT'S NEW
+#whats-new {
+	
+	
+	h4 {
+		font-weight: 200 !important;
+		
+		strong {
+			font-weight: 900 !important;
+		}
+	}
+	
+	.mec-month-divider {
+		display: none;
+	}
+	
+	
+	.mec-wrap {
+		
+		.mec-event-date {
+			background: $m-blue;
+			border-radius: 0;
+		}
+		
+		.mec-event-title {
+			padding-top: 7px;
+			
+			> a {
+				text-transform: uppercase;
+				color: $l-blue;
+				font-weight: 600 !important;
+				
+				//1024px
+				@include respond-max($hor-tablet) {
+					font-size: 16px;
+				}
+				
+				&:hover,
+				&:focus {
+					color: $m-blue;
+				}
+			}
+			
+		}
+		
+		.event-color {
+			display: none;
+		}
+		
+		.mec-event-article {
+			padding: 15px 0 10px;
+		}
+		
+		.mec-event-detail {
+			color: $d-blue;
+		}
+		
+		.col-md-9 {
+			padding-left: 0;
+		}
+		
+		.mec-detail-button {
+			line-height: 1.2;
+			
+			&:hover {
+				background-color: $d-blue !important;
+			}
+		}
+		
+		
+	}
+}

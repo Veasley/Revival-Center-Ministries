@@ -1,0 +1,42 @@
+/* =============================
+	TOP BAR STYLES
+=============================== */
+
+.x-topbar {
+	min-height: 10px;
+	
+	@include respond-custom(max-width, 550px) {
+		display: none;
+    }
+	
+	.p-info {
+		font-size: 12px;
+	}
+	
+	.x-social-global {
+		
+		//767px
+		@include respond-max( $xl-phone ) {
+			display: none;
+		}
+		
+		a {
+			width: 28px;
+			height: 28px;
+			line-height: 28px;
+			font-size: 16px;
+		}
+		
+		//Replacing facebook icon
+		.facebook i::before {
+			content: '\f09a';
+			font-family: 'FontAwesome';
+		}
+		
+		//Replacing youtube icon
+		.youtube i::before {
+			content: '\f16a';
+			font-family: 'FontAwesome';
+		}
+	}
+}
