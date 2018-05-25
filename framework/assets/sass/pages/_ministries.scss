@@ -1,0 +1,94 @@
+/* =============================
+		MINISTRIES PAGES
+=============================== */
+
+// MINISTRIES ROW
+.ministries-details-row {
+	
+	.x-column.x-3-4,
+	.x-column.x-1-4,
+	.x-column.x-2-3,
+	.x-column.x-1-3 {
+		
+		//980px
+		@include respond-max($l-tablet) {
+			width: 100%;
+			display: block;
+			float: none;
+			margin-right: 0;
+		}
+	}
+}
+
+
+// SIDEBAR
+.custom-sidebar {
+	
+	.h-widget {
+		color: $grey;
+		font-size: 100%;
+	}
+	
+	.mec-event-article {
+		min-height: auto !important;
+		padding-left: 0 !important;
+		
+		.mec-event-image {
+			display: none !important;
+		}
+		
+		.mec-event-date {
+			font-size: 13px;
+			line-height: 28px;
+			padding: 0 8px;
+			color: white;
+		}
+		
+		
+		.mec-event-title {
+			margin-bottom: 0 !important;
+		}
+	}
+	
+	
+	.menu {
+		list-style: disc;
+		margin-left: 7%;
+		
+		//980px
+		@include respond-max($l-tablet) {
+			margin-left: 20px;
+		}
+		
+		> li {
+			margin-bottom: 0;
+			
+			&:first-of-type {
+				border-top: 0;
+			}
+			
+			> a {
+				margin: 5px 0;
+				font-size: 15px;
+				color: $grey;
+				opacity: .8;
+				vertical-align: middle;
+				
+				&:hover,
+				&:focus {
+					color: $l-blue;
+				}
+			}
+			
+			&.current-menu-item > a {
+				color: $l-blue;
+				
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	
+}

@@ -68,21 +68,30 @@
 			transition: all 0.3s ease-in-out;
 		}
 	}
+	
+	
+	.sub-menu {
+		top: 75px !important;
+		background-color: rgba(67,79,91,0.95) !important;
+		left: 0 !important;
+		right: auto !important;
+		
+		> li {
+			
+			> a {
+				letter-spacing: .5px;
+				font-size: 13px;
+			}
+		}
+	}
 }
 
 
 
 //Current active item
-.current-menu-item > a {
-	//box-shadow: none !important;
-	//border-bottom: 5px solid $orange;
-	//background-color: white;
-	//color: #57585b !important;
+.current-page-ancestor > a {
+	color: $l-blue !important;
 }
-
-
-
-
 
 
 
@@ -102,12 +111,6 @@
 	    width: inherit;
 		height: inherit;
 	}
-	 
-/*
-    img {
-	   display: none;
-    }
-*/
 
 }
 

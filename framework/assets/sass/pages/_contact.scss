@@ -1,3 +1,14 @@
 /* =============================
 		CONTACT PAGE
 =============================== */
+.contact-details {
+	
+	.address a {
+		color: white;
+		
+		&:hover,
+		&:focus {
+			color: $d-blue;
+		}
+	}
+}

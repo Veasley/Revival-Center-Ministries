@@ -11,19 +11,14 @@
     }
     
     @include respond-custom(max-width, 960px) {
+ 	    padding-top: 10em;
 		padding-bottom: 5em;
     }
     
     //767px
 	@include respond-max( $xl-phone ) {
-		padding-top: 22%;
 		padding-bottom: 3em;
 	}
-	
-	@include respond-custom(max-width, 960px) {
-		padding-top: 10em;
-    }
-
 	
 	.x-text {
 	
@@ -39,4 +34,24 @@
 
 #inner-hero {
 	
+	//1024px
+    @include respond-max($hor-tablet) {
+	    padding-top: 15%;
+		padding-bottom: 15%;
+    }
+    
+    //767px
+	@include respond-max( $xl-phone ) {
+		padding-top: 8em;
+		padding-bottom: 3em;
+	}
+	
+	//480px
+	@include respond-max( $m-phone ) {
+		
+		h1 {
+			font-size: 120%;
+		}
+		
+	}	
 }

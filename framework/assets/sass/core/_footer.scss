@@ -74,6 +74,8 @@
     
     
     
+    
+    
     .menu {
 	    border: 0 !important;
 	    display: flex;
@@ -127,6 +129,15 @@
 			    &:focus {
 				    color: $l-blue;
 			    }
+		    }
+	    }
+	    
+	    
+	    .current-menu-item > a{
+		    color: $l-blue;
+		    
+		    &:after {
+			    display: none;
 		    }
 	    }
     }

@@ -8,7 +8,7 @@
 	.x-feature-box-title {
 		font-size: 1.2rem;
 		
-		 //980px
+		//980px
 		@include respond-max($l-tablet) {
 			font-size: 1rem;
 		}
@@ -40,7 +40,7 @@
 		
 		> a {
 			@extend .x-btn;
-			display: inline-block;
+			display: table;
 			text-transform: uppercase;
 			border: 3px solid $d-blue;
 			margin: em(35) auto;

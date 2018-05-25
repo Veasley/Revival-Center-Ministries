@@ -13,12 +13,11 @@
 	font-weight: 600;
 	transition: all 0.3s linear;
 	
-/*
-	//600px
-    @include respond-max($l-phone) {
+	//480px
+    @include respond-max($m-phone) {
         width: 100%;
+        display: block;
     }
-*/
 
 	&:hover,
 	&:focus {

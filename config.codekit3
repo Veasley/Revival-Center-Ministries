@@ -62,6 +62,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/framework\/assets\/sass\/components\/_calendar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/framework\/assets\/sass\/components\/_calendar.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/framework\/assets\/sass\/components\/_feature-box.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1319,6 +1332,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/framework\/assets\/sass\/pages\/_home.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/framework\/assets\/sass\/pages\/_ministries.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/framework\/assets\/sass\/pages\/_ministries.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

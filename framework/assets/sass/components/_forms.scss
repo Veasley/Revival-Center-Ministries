@@ -54,17 +54,7 @@ textarea {
 //========================
 .gform_button.button,
 input[type="submit"] {
-	font-size: 18px !important;
-	text-transform: uppercase;
-	letter-spacing: 0.08em;
-	text-shadow: none !important;
-	font-weight: bold;
-	padding-top: 15px !important;
-	
-	//600px
-	@include respond-max($l-phone) {
-		font-size: 16px !important;
-	} 
+	@extend .x-btn;
 }
 
 

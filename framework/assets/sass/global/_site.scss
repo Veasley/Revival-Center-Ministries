@@ -9,3 +9,25 @@ a:focus {
 	outline: none !important;
 	transition: all .3s linear;
 }
+
+
+.mec-event-calendar-classic {
+	
+	.mec-calendar-header {
+		color: $d-blue !important;
+	}
+	
+	.mec-calendar-day-head {
+		color: white;
+		background: $d-blue !important;
+	}
+	
+	.mec-event-time {
+		font-size: 16px !important;
+	}
+	
+	
+	.mec-event-title {
+		font-size: 18px !important;
+	}
+}
