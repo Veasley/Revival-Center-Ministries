@@ -1,0 +1,102 @@
+/* =============================
+		GIVING PAGE
+=============================== */
+
+.campaign-grid {
+	
+	.campaign {
+		text-align: center;
+		border: 0 !important;
+		padding: 0 !important;
+		margin-bottom: em(50) !important;
+		
+		
+		
+		&.type-campaign {
+			
+			a {
+				pointer-events: none;
+				cursor: default;
+				text-decoration: none;
+			}
+		}
+		
+		img {
+			padding-bottom: 2em !important;
+		}
+		
+		h3 {
+			font-size: 180%;
+			
+			//1366px
+		    @include respond-max($l-laptop) {
+		        font-size: 160%;
+		    }
+		    
+		    //880px
+			@include respond-max( $m-tablet ) {
+				font-size: 130%;
+			}
+			
+			//767px
+			@include respond-max( $xl-phone ) {
+				font-size: 115%;
+			}
+			
+			//480px
+			@include respond-max( $m-phone ) {
+				font-size: 100%;
+			}
+		}
+		
+		.campaign-description {
+			
+			//767px
+			@include respond-max( $xl-phone ) {
+				font-size: .8rem;
+			}
+		}
+		
+		.campaign-donation-stats {
+			text-transform: capitalize;
+			display: none !important;
+		}
+		
+		.campaign-donation {
+			margin-top: em(30);
+			
+			a {
+				pointer-events: auto !important;
+				cursor: pointer !important;
+			}
+		}
+	}
+	
+}
+
+#charitable-donation-form-modal-loop,
+#charitable-donation-form-modal {
+	
+	//480px
+	@include respond-max( $m-phone ) {
+		padding: 1em !important;
+	}
+	
+	.charitable-form {
+		
+		.charitable-form-header {
+			text-transform: uppercase !important;
+			font-size: 1rem !important;
+		}
+		
+		.charitable-privacy-policy-text,
+		label {
+			
+			//767px
+			@include respond-max( $xl-phone ) {
+				font-size: .8rem;
+			}
+		}
+	}
+}
+

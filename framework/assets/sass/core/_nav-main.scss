@@ -32,29 +32,39 @@
 			
 			> a {
 				
-/*
-				//1200px
-				@include respond-max( $s-laptop ) {
-					padding-left: 20px !important;
-					padding-right: 20px !important;
-					font-size: 19px !important;
+				@include respond-custom(max-width, 1120px) {
+					padding-left: 10px !important;
+					padding-right: 10px !important;
 				}
-*/
-				
-/*
-				//320px
-				@include respond-max( $s-phone ) {
-					font-size: 16px !important;
-				}
-*/
 
 				&:hover {
 					box-shadow: none !important;
-					//background-color: white;
-					//border-bottom: 5px solid $orange;
 					transition: all 0.3s ease-in-out;
 				}
 			}
+			
+			&.x-menu-item-woocommerce {
+	
+				@include respond-custom(max-width, 1120px) {
+					margin-left: 8px !important;
+					
+					@include respond-custom(max-width, 979px) {
+						margin-left: 0 !important;
+					}
+					
+					a {
+						padding-left: 0 !important;
+						padding-right: 0 !important;
+						
+						@include respond-custom(max-width, 979px) {
+							padding-top: 0 !important;
+							padding-bottom: 0 !important;
+						}
+					}
+				}			
+			}
+
+			
 		}
 	}
 	
@@ -105,13 +115,6 @@
 	width: 200px;
 	height: 50px;
     transition: all 0.5s ease-in-out;
-    
-    @include respond-custom(max-width, 979px) {
-	    margin-top: inherit !important;
-	    width: inherit;
-		height: inherit;
-	}
-
 }
 
 
@@ -126,17 +129,21 @@
 		transition: all 0.3s ease-in-out;
 		
 		@include respond-custom(max-width, 979px) {
-			height: inherit !important;
+			height: initial !important;
 			min-height: initial !important;
 		}
 	}
 	
 	
 	.x-nav > li > a {
-		padding-top: 28px !important;
+		padding-top: 30px !important;
 		
 		@include respond-custom(max-width, 979px) {
-			padding: inherit !important;
+			padding: initial !important;
+		}
+		
+		&.x-btn-navbar-woocommerce {
+			padding-top: 23px !important;
 		}
 	}
 	

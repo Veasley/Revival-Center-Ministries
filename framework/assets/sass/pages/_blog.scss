@@ -1,0 +1,85 @@
+/* =============================
+		BLOGA PAGE
+=============================== */
+
+.blog,
+.single-post,
+.search,
+.archive,
+.woocommerce,
+.woocommerce-page,
+.single-mec-events {
+	
+	.x-header-landmark {
+		display: none !important;
+	}
+	
+	.x-sidebar {
+		
+		.h-widget {
+			font-size: 1.4rem;
+			color: $d-blue;
+		}
+		
+		ul {
+			
+			> li {
+				line-height: 1.2;
+			}
+		}
+		
+		.product_list_widget {
+			
+			> li {
+				
+				> a {
+					font-size: 1rem !important;
+				}
+			}
+		}
+		
+		.button {
+				
+			&:hover,
+			&:focus {
+				color: white !important;
+			}
+		}
+	}
+	
+	.p-meta {
+		
+		span {
+			
+			&:nth-child(1),
+			&:nth-child(3),
+			&:nth-child(4) {
+				display: none !important;
+			}
+			
+			&::after {
+				display: none !important;
+			}
+		}
+	}
+}
+
+
+// Single Posts
+//========================
+
+.single-post {
+	
+	#comments {
+		display: none !important;
+	}
+	
+	.x-entry-share {
+		margin-top: 5em;
+		border-bottom: 0 !important;
+	}
+	
+	.wp-post-navigation-next {
+		display: block !important;
+	}
+}

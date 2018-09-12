@@ -9,6 +9,13 @@
 	width: 100%;
 }
 
+._bg-column {
+	
+	@include respond-custom(max-width, 1200px) {
+		height: 320px;
+	}
+}
+
 
 //Hiding Column
 //================
@@ -194,4 +201,28 @@
 			margin-right: 0 !important;
 		}
     }
+}
+
+
+
+
+._flip-columns {
+	
+	//880px
+    @include respond-max($m-tablet) {
+	    display: flex !important;
+ 		flex-direction: column;
+		
+		.-flip1 {
+			order: 2 !important;
+		}
+		
+		
+		.-flip2 {
+			order: 1 !important;
+		}
+	}
+	
+	
+	
 }

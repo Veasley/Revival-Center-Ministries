@@ -1,0 +1,73 @@
+// Targeting anything that's not supported in todays standards
+// typically have this class in body tag
+// ===========================================================
+
+.no-supports {
+	
+	.x-section .x-container.marginless-columns{
+		display: flex;
+	}
+	
+	.x-section .x-container.marginless-columns > .x-column{
+		display: block;
+	}
+	
+	.mec-wrap .mec-event-countdown-style1 .mec-event-countdown-part2::after { 
+		top: 6.5em !important;
+	}
+
+}
+
+
+
+// Targeting Safari 9+
+// source: (https://browserstrangeness.github.io/css_hacks.html)
+// =============================================================
+
+_:default:not(:root:root), ._stretch-container {
+	flex-wrap: inherit;    
+	
+	//1024px
+	@include respond-max( 1024px ) {
+		flex-wrap: wrap;
+	}
+}
+
+
+_:default:not(:root:root), ._break-1-4 .x-column.x-1-4 {
+    
+	//1024px
+	@include respond-max( 1024px ) {
+		margin-right: 3.7% !important;
+	
+		&:nth-child(2n) {
+			margin-right: 0 !important;
+		}
+	}
+	
+	@include respond-custom(max-width, 550px) {
+		margin-right: 0 !important;
+	}
+}
+
+
+
+// Targeting IE 11
+// source: (https://browserstrangeness.github.io/css_hacks.html)
+// =============================================================
+_:-ms-fullscreen, :root .x-navbar .x-nav>li.x-menu-item-woocommerce>a .x-cart>span { 
+	padding: 0 1em !important;
+}
+
+_:-ms-fullscreen, :root .x-navbar .x-nav>li.x-menu-item-woocommerce>a .x-cart { 
+	border-radius: 0 !important;
+}
+
+
+_:-ms-fullscreen, :root .mec-wrap .mec-event-countdown-style1 .mec-event-countdown-part2::after { 
+	border-color: #00a1d8 !important;
+	top: 6.5em !important;
+}
+
+
+

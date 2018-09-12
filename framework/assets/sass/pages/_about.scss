@@ -1,3 +1,199 @@
 /* =============================
 		ABOUT PAGE
 =============================== */
+
+#we-believe {
+	
+	.x-ul-icons {
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		flex-wrap: wrap;
+		margin-bottom: 0;
+		
+		//600px
+		@include respond-max( $l-phone ) {
+			flex-direction: column;
+		}
+		
+		> li {
+			flex-grow: 1; 
+			width: 30.66666%;
+			margin-right: 4%;
+			margin-bottom: em(15);
+			padding-right: 2%;
+			
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+			
+			//880px
+			@include respond-max( $m-tablet ) {
+				width: 48%;
+				
+				&:nth-child(3n) {
+					margin-right: 4%;
+				}
+				
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+			}
+			
+			//600px
+			@include respond-max( $l-phone ) {
+				width: 100%;
+				margin-right: 0;
+				padding-right: 0;
+				font-size: .9rem;
+				
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+			}
+			
+			i {
+				font-size: 1.5rem;
+				
+				//600px
+				@include respond-max( $l-phone ) {
+					font-size: 1rem;
+				}
+				
+				&::before {
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}
+
+
+
+#our-pastor {
+	
+	.x-bg {
+		
+		&:before {
+		    content: '';
+		    position: absolute;
+		    display: block !important;
+		    width: 100%;
+		    height: 100%;
+		    left: 0;
+		    top: 0;
+		    z-index: 2;
+		    background: url('/wp-content/uploads/2018/05/gradient-overlay.png');
+			opacity: .75;
+		}
+		
+		.x-bg-layer-upper-image {
+			
+			@include respond-custom(max-width, 1200px) {
+				background-size: auto !important;
+			}
+			
+			//1024px
+			@include respond-max($hor-tablet) {
+				background-size: cover !important;
+			}
+		}
+		
+	}
+	
+	.paul {
+			
+		.x-bg-layer-upper-image {
+		
+			@include respond-custom(max-width, 1200px) {
+				background-position: left bottom !important;
+			}
+			
+			//1024px
+			@include respond-max($hor-tablet) {
+				background-position: 25% bottom !important;
+			}
+			
+			//880px
+			@include respond-max( $m-tablet ) {
+				background-position: 25% 15% !important;
+			}
+		}
+	}
+	
+	.marva {
+		
+		.x-bg-layer-upper-image {
+		
+			@include respond-custom(max-width, 1200px) {
+				background-position: center bottom !important;
+			}
+			
+			//1024px
+			@include respond-max($hor-tablet) {
+				background-position: 58% bottom !important;
+			}
+			
+			//880px
+			@include respond-max( $m-tablet ) {
+				background-position: 58% center !important;
+			}
+		}
+	}
+	
+	._stretch-container {
+		
+		//880px
+		@include respond-max( $m-tablet ) {
+			flex-direction: column;
+		}
+	}
+	
+	.x-column.x-3-5,
+	.x-column.x-2-5 {
+		
+		//880px
+		@include respond-max( $m-tablet ) {
+			width: 100%;
+			float: none;
+			display: block;
+		}
+	}
+	
+}
+
+
+// OUR STAFF
+//=================================
+.staff-row {
+	
+	h6 {
+		margin-bottom: 0;
+	}
+	
+	p {
+		margin-bottom: 0;
+		
+		&:last-of-type {
+			margin-bottom: em(30);
+		}
+		
+		a {
+			margin-right: 1em;
+			font-size: 1.1rem;
+			
+			&:hover,
+			&:focus {
+				color: $d-blue;
+			}
+			
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	em {
+		font-style: italic;
+	}
+}

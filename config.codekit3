@@ -44,8 +44,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/framework\/assets\/js\/src\/on-scroll-min.js",
-		"oF": 0,
+		"oAP": "\/framework\/assets\/js\/dist\/on-scroll-min.js",
+		"oF": 2,
 		"sC": 1,
 		"tS": 0
 		},
@@ -1310,6 +1310,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/framework\/assets\/sass\/pages\/_blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/framework\/assets\/sass\/pages\/_blog.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/framework\/assets\/sass\/pages\/_contact.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1319,6 +1332,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/framework\/assets\/sass\/pages\/_contact.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/framework\/assets\/sass\/pages\/_giving.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/framework\/assets\/sass\/pages\/_giving.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1345,6 +1371,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/framework\/assets\/sass\/pages\/_ministries.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/framework\/assets\/sass\/pages\/_shop.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/framework\/assets\/sass\/pages\/_shop.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

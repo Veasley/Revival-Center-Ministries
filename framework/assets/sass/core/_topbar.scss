@@ -26,17 +26,19 @@
 			line-height: 28px;
 			font-size: 16px;
 		}
-		
-		//Replacing facebook icon
-		.facebook i::before {
-			content: '\f09a';
-			font-family: 'FontAwesome';
-		}
-		
-		//Replacing youtube icon
-		.youtube i::before {
-			content: '\f16a';
-			font-family: 'FontAwesome';
-		}
+	}
+}
+
+
+.x-social-global {
+				
+	//Replacing facebook icon
+	.facebook i::before {
+		content: '\f39e';
+	}
+	
+	//Replacing youtube icon
+	.youtube i::before {
+		content: '\f167';
 	}
 }

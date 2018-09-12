@@ -55,3 +55,53 @@
 		
 	}	
 }
+
+
+.blog,
+.single-post,
+.search,
+.archive,
+.woocommerce,
+.woocommerce-page,
+.single-mec-events {
+	
+	#inner-hero {
+		padding: 12% 0px 12% 0px !important;
+		text-align: center !important;
+		background-image: url('/wp-content/uploads/2018/06/news-hero2.jpg'); 
+		background-repeat: no-repeat; 
+		background-position: center center; 
+		background-size: cover; 
+		
+		//1024px
+	    @include respond-max($hor-tablet) {
+		    padding-top: 15% !important;
+			padding-bottom: 15% !important;
+	    }
+	    
+	    //767px
+		@include respond-max( $xl-phone ) {
+			padding-top: 8em !important;
+			padding-bottom: 3em !important;
+		}
+		
+		//480px
+		@include respond-max( $m-phone ) {
+			
+			h1 {
+				font-size: 120% !important;
+			}
+			
+		}	
+	}
+}
+
+
+.woocommerce,
+.woocommerce-page {
+	
+	#inner-hero {
+		background-image: url('/wp-content/uploads/2018/06/bookstore-hero.jpg');  
+		background-position: center bottom; 
+	}
+}

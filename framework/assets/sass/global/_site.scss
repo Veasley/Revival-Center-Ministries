@@ -31,3 +31,20 @@ a:focus {
 		font-size: 18px !important;
 	}
 }
+
+#cd-timeline {
+	
+	.cd-timeline-item-title {
+		font-size: 160% !important;
+		
+		//767px
+		@include respond-max( $xl-phone ) {
+			font-size: 130% !important;
+		}
+		
+		//480px
+		@include respond-max( $m-phone ) {
+			font-size: 100% !important;
+		}
+	}
+}

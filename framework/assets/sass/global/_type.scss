@@ -99,7 +99,8 @@ h3 {
 
 // H4 BUILD
 // ===========================
-h4 {
+h4,
+.h4 {
 	
 	//1366px
     @include respond-max($l-laptop) {
@@ -160,43 +161,13 @@ h6 {
 
 //===========================================================================================
 
-
-
-// X-TEXT STYLES - X-THEME
-// ===========================
-
-.x-text { 	
-
-	//Gray Variant
-	//=======================
-	&.-grey{
-
-		> h1, h2, h3, h4,h5,h6, p{
-			color: $grey;
-		}
-
-	}
-
-	//White Variant
-	//=====================
-	&.-white{
-
-		> h1, h2, h3, h4, h5, h6, p{
-			color: white;
-		}
-
-	}
-
-}
-
-
 //TEXT TITLE VARIATIONS
 //==========================
 .x-text {
 	line-height: 1.5;
 	
 	&.head-title {
-		
+				
 		> p {
 			text-transform: uppercase;
 			margin-bottom: 8px;
@@ -213,10 +184,9 @@ h6 {
 			    font-size: 0.8rem;
 			    line-height: 1.2;
 			}
-		}
-		
+		}		
 	}
-	
+		
 	p {
 		//767px
 		@include respond-max( $xl-phone ) {
@@ -224,6 +194,48 @@ h6 {
 		}
 	}
 }
+
+
+
+
+// X-TEXT STYLES - X-THEME
+// ===========================
+
+.x-text,
+.h-custom-headline { 	
+
+	//Gray Variant
+	//=======================
+	&.-grey{
+
+		> h1, h2, h3, h4,h5,h6, p, span{
+			color: $grey;
+		}
+
+	}
+	
+	//Dark Blue Variant
+	//=======================
+	&.-d-blue{
+
+		> h1, h2, h3, h4,h5,h6, p, span{
+			color: $d-blue;
+		}
+
+	}
+
+	//White Variant
+	//=====================
+	&.-white{
+
+		> h1, h2, h3, h4, h5, h6, p, span{
+			color: white;
+		}
+
+	}
+
+}
+
 
 
 
